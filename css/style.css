@@ -261,8 +261,8 @@ p {
 
 /* --- Hero --- */
 .hero {
-  height: 60vh;
-  max-height: 60vh;
+  height: 75vh;
+  max-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -281,7 +281,7 @@ p {
 }
 
 .hero-logo {
-  width: clamp(180px, 25vw, 340px);
+  width: clamp(350px, 50vw, 650px);
   margin-bottom: 2rem;
   animation: fadeInUp 1.2s ease forwards;
 }
@@ -806,6 +806,7 @@ section {
 }
 
 .footer-logo {
+  max-width: 250px;
   height: 26px;
   margin: 0 auto 1.5rem;
 }
@@ -1094,6 +1095,7 @@ section {
 }
 
 .footer .footer-logo {
+  max-width: 250px;
   height: 26px;
   margin: 0 auto 1rem;
 }
@@ -1173,6 +1175,7 @@ section {
 }
 
 .nav-logo-img {
+  min-height: 40px;
   height: 45px;
   width: auto;
 }
