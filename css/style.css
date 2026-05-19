@@ -1130,3 +1130,29 @@ section {
 .hero-scroll {
     margin-top: 1.5rem;
 }
+
+/* Logo overlay on product images */
+.product-card-image {
+    position: relative;
+}
+.product-card-image::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 50px;
+    background: url('/images/logo.png') center/contain no-repeat;
+    opacity: 0.85;
+    pointer-events: none;
+    filter: brightness(0) invert(1);
+    mix-blend-mode: difference;
+}
+/* For light colored shirts, use dark logo */
+.product-card:nth-child(1) .product-card-image::after,
+.product-card:nth-child(3) .product-card-image::after,
+.product-card:nth-child(5) .product-card-image::after {
+    filter: none;
+    opacity: 0.7;
+}
