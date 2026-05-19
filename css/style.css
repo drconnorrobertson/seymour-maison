@@ -256,8 +256,8 @@ p {
 
 /* --- Hero --- */
 .hero {
-  height: 80vh;
-  max-height: 80vh;
+  height: 70vh;
+  max-height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -329,7 +329,7 @@ p {
 
 /* --- Sections --- */
 section {
-  padding: clamp(3rem, 5vw, 5rem) 0;
+  padding: clamp(2rem, 3vw, 3.5rem) 0;
 }
 
 .section-header {
@@ -471,7 +471,7 @@ section {
   background: var(--bg-elevated);
   border-top: 1px solid var(--accent);
   border-bottom: 1px solid var(--accent);
-  padding: clamp(3rem, 5vw, 5rem) 0;
+  padding: clamp(2rem, 3vw, 3.5rem) 0;
 }
 
 .waitlist-section .section-label {
@@ -1107,4 +1107,26 @@ section {
 @media (max-width: 768px) {
     .founder-grid { grid-template-columns: 1fr; gap: 32px; }
     .ventures-grid { grid-template-columns: 1fr; }
+}
+
+
+/* Fix product card images - dark background for luxury feel */
+.product-card-image img {
+    background: #141414;
+    mix-blend-mode: multiply;
+}
+.product-card-image {
+    background: #141414 !important;
+    overflow: hidden;
+}
+
+/* Tighten the gap between hero and collection */
+.hero + section,
+#collection {
+    margin-top: -2rem;
+}
+
+/* Ensure hero scroll indicator is visible */
+.hero-scroll {
+    margin-top: 1.5rem;
 }
