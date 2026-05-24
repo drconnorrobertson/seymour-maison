@@ -1637,37 +1637,3 @@ section {
   }
 }
 
-/* Logo on product images - blend mode approach */
-.product-card-image {
-  position: relative;
-  overflow: hidden;
-}
-
-.product-card-image::after {
-  content: '';
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 120px;
-  height: 50px;
-  background: url('/images/logo-white-transparent.png') center/contain no-repeat;
-  mix-blend-mode: screen;
-  opacity: 0.85;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-
-/* For light colored product images, use dark logo with multiply blend */
-.product-card:nth-child(1) .product-card-image::after,
-.product-card:nth-child(3) .product-card-image::after,
-.product-card:nth-child(4) .product-card-image::after,
-.product-card:nth-child(7) .product-card-image::after {
-  background-image: url('/images/logo-dark-transparent.png');
-  mix-blend-mode: multiply;
-  opacity: 0.6;
-}
-
-.product-card:hover .product-card-image::after {
-  opacity: 1;
-}
