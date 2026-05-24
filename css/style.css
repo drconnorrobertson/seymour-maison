@@ -392,23 +392,28 @@ section {
 }
 
 /* Logo overlay on product images */
+.product-card-image {
+  position: relative;
+  overflow: hidden;
+}
 .product-card-image::after {
   content: '';
   position: absolute;
-  top: 50%;
+  bottom: 16px;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  height: 40px;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 55px;
   background: url('/images/logo.png') center/contain no-repeat;
-  opacity: 0.15;
+  opacity: 0.75;
   pointer-events: none;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.6));
   mix-blend-mode: screen;
   transition: opacity 0.4s ease;
 }
 
 .product-card:hover .product-card-image::after {
-  opacity: 0.3;
+  opacity: 0.9;
 }
 
 .product-card-info {
