@@ -1637,3 +1637,72 @@ section {
   }
 }
 
+
+/* --- Caps Grid --- */
+.caps-grid {
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .caps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .caps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* --- Product image loading state --- */
+.product-card-image {
+  background: #1a1a1a;
+}
+
+.product-card-image img {
+  opacity: 1;
+  transition: opacity 0.4s ease, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --- Lookbook responsive image fixes --- */
+@media (max-width: 768px) {
+  .lookbook-item img {
+    aspect-ratio: 3/4;
+  }
+
+  .lookbook-item-large img {
+    aspect-ratio: 16/10;
+  }
+}
+
+/* --- Full-bleed responsive --- */
+@media (max-width: 768px) {
+  .full-bleed {
+    height: 30vh;
+    min-height: 220px;
+  }
+
+  .full-bleed-text h2 {
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+    padding: 0 1rem;
+  }
+}
+
+/* --- About section image responsive --- */
+@media (max-width: 768px) {
+  .about-image {
+    aspect-ratio: 16/10;
+  }
+}
+
+/* --- Instagram grid responsive --- */
+@media (max-width: 480px) {
+  .instagram-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.25rem;
+  }
+}
