@@ -1817,3 +1817,6 @@ p, blockquote { text-wrap: pretty; }
 
 .product-card-image { box-shadow: 0 12px 36px rgba(0,0,0,.12); } .product-card-name { line-height: 1.4; }
 @media (min-width: 769px) { .main-nav { width: calc(50% - 175px); } .main-nav ul { display: grid; grid-template-columns: repeat(4,max-content); gap: .65rem clamp(.55rem,1vw,1.2rem); } .main-nav a { font-size: .65rem; letter-spacing: .1em; white-space: nowrap; } }
+
+/* Honor reduced-motion preferences without repeating shortened animations. */
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-iteration-count: 1 !important; } }
