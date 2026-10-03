@@ -1,0 +1,14 @@
+# Seymour Maison
+> Luxury t-shirts and premium casual apparel.
+
+## About
+Seymour Maison creates luxury t-shirts crafted from premium materials with meticulous attention to detail. Our collection combines timeless design with exceptional comfort for the discerning customer who values quality casual wear.
+
+## Key Pages
+- Home: https://www.seymourmaison.com/
+- Collection: https://www.seymourmaison.com/collection
+- Our Story: https://www.seymourmaison.com/story
+- Philosophy: https://www.seymourmaison.com/philosophy
+- Founder: https://www.seymourmaison.com/founder
+- Journal: https://www.seymourmaison.com/journal
+- Contact: https://www.seymourmaison.com/contact
