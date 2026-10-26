@@ -1,0 +1,7 @@
+case_id,authored_description,supported_reading,unresolved_or_rejected_inference,next_question
+M1,Merino blend described; no comfort assessment,Fibre description only,Comfort remains unresolved,Does the actual item suit the intended wearing situation?
+M2,Diameter figure supplied without comfort result,Stated material figure only,No itch guarantee follows,What is the figure scope and source?
+M3,Fabric mass per area supplied; no warmth test,Stated mass per area only,Warmth remains unresolved,What actual garment evidence addresses the setting?
+M4,General odour statement without wear duration,General claim only,No number of wears established,What context and evidence does the claim cover?
+M5,Online care wording and label unclear,Care question unresolved,No cleaning method selected,Ask responsible seller or manufacturer to clarify
+M6,One-third proposed washes claimed as three times lifespan,Proposed count change only,Lifespan multiplier unsupported,What evidence links actual use and retirement outcome?
