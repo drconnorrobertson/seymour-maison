@@ -1,0 +1,6 @@
+fictional_product,component,fiber,stated_percent,hypothetical_component_fiber_mass_g,scope
+JacketA,Shell,Cotton,60,300,Fictional component only; not a product or regulatory label
+JacketA,Shell,Polyester,40,300,"Same shell mass, not an additional component"
+JacketA,Lining,Viscose,100,100,Fictional component only
+ShirtB,Body,Cotton,60,,No component mass supplied
+ShirtB,Body,Polyester,40,,No component mass supplied
