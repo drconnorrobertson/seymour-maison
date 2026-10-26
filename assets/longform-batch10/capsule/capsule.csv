@@ -1,0 +1,7 @@
+top_id,bottom_id,fictional_pairing_result,layer_note,care_question
+T01,B01,workable,test L01,check actual labels
+T01,B02,workable,test L01,check actual labels
+T02,B01,workable,test L01,check actual labels
+T02,B02,not in this capsule,not selected,check actual labels
+T03,B01,not in this capsule,not selected,check actual labels
+T03,B02,workable,L01 restrictive in fictional trial,check actual labels
