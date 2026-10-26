@@ -1,0 +1,17 @@
+[
+  {
+    "sample": "FICTIONAL-A",
+    "area_m2": "0.05",
+    "calculated_gsm": "180"
+  },
+  {
+    "sample": "FICTIONAL-B",
+    "area_m2": "0.06",
+    "calculated_gsm": "180"
+  },
+  {
+    "sample": "FICTIONAL-C",
+    "area_m2": "0.05",
+    "calculated_gsm": "240"
+  }
+]
