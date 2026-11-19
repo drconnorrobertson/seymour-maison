@@ -51,18 +51,24 @@
     var nav = document.querySelector('.main-nav');
     if (!toggle || !nav) return;
 
-    toggle.addEventListener('click', function () {
-      toggle.classList.toggle('active');
-      nav.classList.toggle('open');
-      document.body.style.overflow = nav.classList.contains('open') ? 'hidden' : '';
+    if (!nav.id) nav.id = 'primary-navigation';
+    toggle.setAttribute('aria-controls', nav.id);
+    toggle.setAttribute('aria-expanded', 'false');
+    function setOpen(open) {
+      toggle.classList.toggle('active', open);
+      nav.classList.toggle('open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    toggle.addEventListener('click', function () { setOpen(!nav.classList.contains('open')); });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && nav.classList.contains('open')) { setOpen(false); toggle.focus(); }
     });
 
     // Close nav on link click
     nav.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
-        toggle.classList.remove('active');
-        nav.classList.remove('open');
-        document.body.style.overflow = '';
+        setOpen(false);
       });
     });
   }
@@ -80,40 +86,12 @@
     });
   }
 
-  // --- Waitlist form handling ---
-  function initWaitlistForm() {
-    document.querySelectorAll('.waitlist-form').forEach(function (form) {
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        var emailInput = form.querySelector('input[type="email"]');
-        var button = form.querySelector('button');
-        var email = emailInput.value.trim();
-
-        if (!email) return;
-
-        // Visual feedback
-        var originalText = button.textContent;
-        button.textContent = 'ADDED';
-        button.style.background = '#1a472a';
-        button.style.borderColor = '#1a472a';
-        emailInput.value = '';
-
-        setTimeout(function () {
-          button.textContent = originalText;
-          button.style.background = '';
-          button.style.borderColor = '';
-        }, 3000);
-      });
-    });
-  }
-
   // --- Init ---
   document.addEventListener('DOMContentLoaded', function () {
     initScrollAnimations();
     initHeaderScroll();
     initMobileNav();
     initSmoothScroll();
-    initWaitlistForm();
   });
 
 })();
