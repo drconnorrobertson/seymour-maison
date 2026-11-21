@@ -18,70 +18,63 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 
-  <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "The Essential",
-      "description": "Pure Pima cotton luxury t-shirt. The Seymour Maison crest embroidered at the chest. Where everything begins.",
-      "brand": {"@type": "Brand", "name": "Seymour Maison"},
-      "manufacturer": {"@type": "Organization", "name": "Seymour Maison", "url": "https://www.seymourmaison.com"},
-      "offers": {"@type": "Offer", "availability": "https://schema.org/PreOrder", "url": "https://www.seymourmaison.com/waitlist/"},
-      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=650&fit=crop"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "The Statement",
-      "description": "Heavyweight 300gsm luxury t-shirt. Tonal logo at the back neck. For moments that demand presence.",
-      "brand": {"@type": "Brand", "name": "Seymour Maison"},
-      "manufacturer": {"@type": "Organization", "name": "Seymour Maison", "url": "https://www.seymourmaison.com"},
-      "offers": {"@type": "Offer", "availability": "https://schema.org/PreOrder", "url": "https://www.seymourmaison.com/waitlist/"},
-      "image": "https://images.unsplash.com/photo-1503341504253-dff4f7455b37?w=500&h=600&fit=crop&crop=center"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "The Archive",
-      "description": "Washed finish luxury t-shirt with relaxed silhouette. Heritage logo woven into the hem.",
-      "brand": {"@type": "Brand", "name": "Seymour Maison"},
-      "manufacturer": {"@type": "Organization", "name": "Seymour Maison", "url": "https://www.seymourmaison.com"},
-      "offers": {"@type": "Offer", "availability": "https://schema.org/PreOrder", "url": "https://www.seymourmaison.com/waitlist/"},
-      "image": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=500&h=600&fit=crop&crop=center"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "The Foundation",
-      "description": "Double-stitched seams, reinforced collar luxury t-shirt. The bedrock of a considered wardrobe.",
-      "brand": {"@type": "Brand", "name": "Seymour Maison"},
-      "manufacturer": {"@type": "Organization", "name": "Seymour Maison", "url": "https://www.seymourmaison.com"},
-      "offers": {"@type": "Offer", "availability": "https://schema.org/PreOrder", "url": "https://www.seymourmaison.com/waitlist/"},
-      "image": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=500&h=600&fit=crop&crop=center"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "The Nocturne",
-      "description": "Midnight black, silk-touch cotton luxury t-shirt. Embossed Seymour Maison mark at the chest.",
-      "brand": {"@type": "Brand", "name": "Seymour Maison"},
-      "manufacturer": {"@type": "Organization", "name": "Seymour Maison", "url": "https://www.seymourmaison.com"},
-      "offers": {"@type": "Offer", "availability": "https://schema.org/PreOrder", "url": "https://www.seymourmaison.com/waitlist/"},
-      "image": "https://images.unsplash.com/photo-1618354691438-25bc04584c23?w=500&h=600&fit=crop&crop=center"
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "The Meridian",
-      "description": "Stone gray, mid-weight luxury t-shirt. Logo embroidered in charcoal thread.",
-      "brand": {"@type": "Brand", "name": "Seymour Maison"},
-      "manufacturer": {"@type": "Organization", "name": "Seymour Maison", "url": "https://www.seymourmaison.com"},
-      "offers": {"@type": "Offer", "availability": "https://schema.org/PreOrder", "url": "https://www.seymourmaison.com/waitlist/"},
-      "image": "https://images.unsplash.com/photo-1627225924765-552d49cf2b73?w=500&h=600&fit=crop&crop=center"
+  <script type="application/ld+json">[
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "@id": "https://www.seymourmaison.com/collection/#page",
+    "url": "https://www.seymourmaison.com/collection/",
+    "name": "The Collection | Seymour Maison",
+    "mainEntity": {
+      "@id": "https://www.seymourmaison.com/collection/#styles"
     }
-  ]
-  </script>
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "@id": "https://www.seymourmaison.com/collection/#styles",
+    "name": "Seymour Maison collection styles",
+    "numberOfItems": 6,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "The Essential",
+        "url": "https://www.seymourmaison.com/collection/#style-essential"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "The Statement",
+        "url": "https://www.seymourmaison.com/collection/#style-statement"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "The Archive",
+        "url": "https://www.seymourmaison.com/collection/#style-archive"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "The Foundation",
+        "url": "https://www.seymourmaison.com/collection/#style-foundation"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "The Nocturne",
+        "url": "https://www.seymourmaison.com/collection/#style-nocturne"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "The Meridian",
+        "url": "https://www.seymourmaison.com/collection/#style-meridian"
+      }
+    ]
+  }
+]</script>
   <meta property="og:image" content="https://www.seymourmaison.com/images/logo.png">
   <meta property="og:site_name" content="Seymour Maison">
   <meta property="og:locale" content="en_US">
@@ -246,7 +239,7 @@
               <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=750&fit=crop&q=80" alt="The Essential - Luxury White T-Shirt" loading="lazy">
             </div>
             <div class="product-card-info">
-              <h3 class="product-card-name">The Essential</h3>
+              <h3 class="product-card-name" id="style-essential">The Essential</h3>
               <p class="product-card-desc">Pure Pima cotton. The Seymour Maison crest embroidered at the chest. Where everything begins.</p>
               <span class="product-badge">Waitlist Only</span>
             </div>
@@ -257,7 +250,7 @@
               <img src="/images/the-statement.jpg" alt="Seymour Maison black T-shirt illustration" loading="lazy">
             </div>
             <div class="product-card-info">
-              <h3 class="product-card-name">The Statement</h3>
+              <h3 class="product-card-name" id="style-statement">The Statement</h3>
               <p class="product-card-desc">Heavyweight 300gsm construction. Tonal logo at the back neck. For moments that demand presence.</p>
               <span class="product-badge">Waitlist Only</span>
             </div>
@@ -268,7 +261,7 @@
               <img src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=600&h=750&fit=crop&q=80" alt="The Archive - Luxury Gray T-Shirt" loading="lazy">
             </div>
             <div class="product-card-info">
-              <h3 class="product-card-name">The Archive</h3>
+              <h3 class="product-card-name" id="style-archive">The Archive</h3>
               <p class="product-card-desc">Washed finish, relaxed silhouette. Heritage logo woven into the hem. Drawn from our past, built for now.</p>
               <span class="product-badge">Waitlist Only</span>
             </div>
@@ -279,7 +272,7 @@
               <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?w=600&h=750&fit=crop&q=80" alt="The Foundation - Luxury Folded T-Shirt" loading="lazy">
             </div>
             <div class="product-card-info">
-              <h3 class="product-card-name">The Foundation</h3>
+              <h3 class="product-card-name" id="style-foundation">The Foundation</h3>
               <p class="product-card-desc">Double-stitched seams, reinforced collar. Discreet logo tag at the side. The bedrock of a considered wardrobe.</p>
               <span class="product-badge">Waitlist Only</span>
             </div>
@@ -290,7 +283,7 @@
               <img src="https://images.unsplash.com/photo-1618354691438-25bc04584c23?w=600&h=750&fit=crop&q=80" alt="The Nocturne - Dark Luxury T-Shirt" loading="lazy">
             </div>
             <div class="product-card-info">
-              <h3 class="product-card-name">The Nocturne</h3>
+              <h3 class="product-card-name" id="style-nocturne">The Nocturne</h3>
               <p class="product-card-desc">Midnight black, silk-touch cotton. Embossed Seymour Maison mark at the chest. Made for the night.</p>
               <span class="product-badge">Waitlist Only</span>
             </div>
@@ -301,7 +294,7 @@
               <img src="/images/the-meridian.jpg" alt="Seymour Maison gray T-shirt illustration" loading="lazy">
             </div>
             <div class="product-card-info">
-              <h3 class="product-card-name">The Meridian</h3>
+              <h3 class="product-card-name" id="style-meridian">The Meridian</h3>
               <p class="product-card-desc">Stone gray, mid-weight. Logo embroidered in charcoal thread. The center of every rotation.</p>
               <span class="product-badge">Waitlist Only</span>
             </div>
